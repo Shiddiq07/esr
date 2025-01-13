@@ -338,4 +338,21 @@ $route['procurement/purchase-list-order/detail'] = 'procurement/PurchaseListOrde
 #DETAIL PURCHASE
 $route['procurement/purchase-receipt/detail'] = 'procurement/PurchaseReceiptController/actionDetail';
 
+#VENDOR REPORT
+$route['procurement/vendor-report'] = 'procurement/VendorReportController/actionIndex';
+$route['procurement/vendor-report/index'] = 'procurement/VendorReportController/actionIndex';
+// $route['procurement/vendor-report/(:any)'] = 'procurement/VendorReportController/actionIndex/$1';
+
+#EXPENSE REPORT
+$route['procurement/expense-report'] = 'procurement/ExpenseReportController/actionIndex';
+$route['procurement/expense-report/index'] = 'procurement/ExpenseReportController/actionIndex';
+$route['procurement/expense-report/(:any)'] = 'procurement/ExpenseReportController/actionIndex/$1';
+#STOCK REPORT
+$route['procurement/stock-report'] = 'procurement/StockReportController/actionIndex';
+$route['procurement/stock-report/index'] = 'procurement/StockReportController/actionIndex';
+$route['procurement/stock-report/(:any)'] = 'procurement/StockReportController/actionIndex/$1';
+#PURCHASE REPORT
+$route['procurement/purchase-report'] = 'procurement/PurchaseReportController/actionIndex';
+$route['procurement/purchase-report/index'] = 'procurement/PurchaseReportController/actionIndex';
+$route['procurement/purchase-report/(:any)'] = 'procurement/PurchaseReportController/actionIndex/$1';
 # END PROCUREMENT ROUTE
