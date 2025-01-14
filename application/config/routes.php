@@ -338,6 +338,17 @@ $route['procurement/purchase-list-order/detail'] = 'procurement/PurchaseListOrde
 #DETAIL PURCHASE
 $route['procurement/purchase-receipt/detail'] = 'procurement/PurchaseReceiptController/actionDetail';
 
+#INVOICE
+$route['procurement/invoice'] = 'procurement/InvoiceController/actionIndex';
+$route['procurement/invoice/index'] = 'procurement/InvoiceController/actionIndex';
+$route['procurement/invoice/(:any)'] = 'procurement/InvoiceController/actionIndex/$1';
+
+#INVOICE LIST
+$route['procurement/invoice-list'] = 'procurement/InvoiceListController/actionIndex';
+$route['procurement/invoice-list/index'] = 'procurement/InvoiceListController/actionIndex';
+// $route['procurement/invoice-list/(:any)'] = 'procurement/InvoiceListController/actionIndex/$1';
+$route['procurement/invoice-list/detail'] = 'procurement/InvoiceListController/actionDetail';
+
 #VENDOR REPORT
 $route['procurement/vendor-report'] = 'procurement/VendorReportController/actionIndex';
 $route['procurement/vendor-report/index'] = 'procurement/VendorReportController/actionIndex';
